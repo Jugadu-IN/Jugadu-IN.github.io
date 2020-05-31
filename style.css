@@ -1,0 +1,4 @@
+.jugadu-gradient {
+    background-color: #FFD500 !important; /* For browsers that do not support gradients */
+    background-image: linear-gradient(120deg, #FFD500, #FFB700);
+}

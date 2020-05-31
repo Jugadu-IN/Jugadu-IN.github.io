@@ -1,110 +1,254 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, inital-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <meta lang="en">
-    </head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jugadu.in</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top nav-des nav-text">
-            <a class="navbar-brand ml-5" href="index.html">Jugadu.in</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse nav-des" id="navbarSupportedContent">
-                <ul class="navbar-nav justify-content-end mr-5 mt-2 ml-auto nav-space">
-                    <li class="nav-item active nav-space">
-                        <a class="nav-link" href="#">About us<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item nav-space">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item dropdown nav-space">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Projects
-                        </a>
-                        <div class="dropdown-menu nav-des" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Project 1</a>
-                            <a class="dropdown-item" href="#">Project 2</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Playgrounds</a>
-                        </div>
-                    </li>
-                    <li class="nav-item nav-space">
-                        <a class="nav-link" href="#">Contact us</a>
-                    </li>
-                </ul>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+        html {
+          scroll-behavior: smooth;
+        }
+        
+        .jugadu-gradient {
+          background-color: #FFD500; /* For browsers that do not support gradients */
+          background-image: linear-gradient(120deg, #FFD500, #FFB700);
+        }
+
+        .jugadu-radial-gradient {
+          background-color: #485461;
+          background-image:  url("bg_element_3.svg"), linear-gradient(315deg, #242730 0%, #141516 74%);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: scroll;
+          background-position: center;
+        }
+
+        .hero.is-dark.is-bold{ 
+          background-image: url("bg_element_3.svg"), linear-gradient(141deg,#1f191a 0,#363636 71%,#46403f 100%);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          background-position: unset;
+         
+        }
+
+        .is-dark-bg {
+          background-color: #1f191a;
+          background-image: linear-gradient(141deg,#1f191a 0,#363636 71%,#46403f 100%);
+        }
+
+        .jugadu-background-elem {
+          background-image:  url("bg_element_3.svg") !important;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          background-position: center;
+        }
+
+        .navbar-title-font {
+            font-family: 'Fredoka One', cursive;
+        }
+
+        .header-title {
+          font-family: 'Poiret One', cursive;
+          color: white !important;
+        }
+
+        .header-subtitle {
+          color: white !important;
+        }
+
+        .div.card-image {
+          height: 200px;
+          overflow: hidden !important;
+          text-align: center;
+        }
+        .card-image > img {
+          height: 100%; 
+        }
+
+    </style>    
+  </head>
+  <body>
+    <section class="hero is-fullheight is-dark is-bold" id="home">
+        <div class="hero-body jugadu-parallax">
+          <div class="container has-text-centered">
+            <div class="title is-size-2 header-title">
+              SASTA. SUNDAR. TECH-AO.
             </div>
-        </nav>
-
-        <div class="container-fluid nav-text">
-            <div id="carouselControl" class="carousel slide carousel-slide" data-ride="carousel">          
-                <div class="carousel-inner ">
-                    <div class="carousel-item active">
-                        <img src="static/Carousel 1.png" class="d-block w-100" alt="image1">
+            
+              <img src="jugadu Logo_Circle.png" class="is-1by1" style="width: 150px" />
+            
+              <h2 class="subtitle is-size-4 header-subtitle">
+                Services that we provide includes <span id="whatCanWeBuildForYou"></span>
+              </h2>
+              <button class="button is-rounded is-warning  is-outlined" style="margin-top: 2em" id="getStartedBtn">Let's Get Started</button>
+          </div>
+        </div>
+        <div class="hero-foot"></div>
+        </div>
+      </section>
+      <nav class="navbar is-dark is-bold" style="position: -webkit-sticky; position: sticky;">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <div class="navbar-title-font is-size-4">JUGADU.IN</div>
+            </a>
+            <span id="toggle" class="navbar-burger burger" data-target="navbarMenuHeroB">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroB" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active" href="#home">Home</a>
+              <a class="navbar-item" href="#services">Services</a>
+              <a class="navbar-item">About Us</a>
+              <a class="navbar-item">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section class="section" id="services">
+        <div class="container">
+          <h1 class="title">SERVICES</h1>
+          <h2 class="subtitle">
+            We offer a wide variety of <strong>low cost and efficient</strong> digital solutions. Our top priority is customer satisfaction.
+          </h2>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="content">
+            <div class="columns is-multiline is-mobile is-centered">
+              <div class="column is-full-mobile is-one-third-tablet is-one-quarter-desktop">
+                <div class="card" style="height: 100%">
+                  <div class="card-image has-text-centered v-centered" style="height: 200px">
+                    <img src="website-design-img-01.png" class="is-square" alt="Webdesign image" style="height: 100%">
+                  </div>
+                  <div class="card-content">
+                    <div class="title is-size-5 has-text-centered">
+                      WEBSITE DESIGNING
                     </div>
-                    <div class="carousel-item">
-                        <img src="static/Carousel 2.png" class="d-block w-100" alt="image2">
-                        <div class="carousel-caption d-md-block ml-auto mr-auto">
-                            <div class="row text-left txt-blk">
-                                <div class="col-6">
-                                    <h1>
-                                        About us 
-                                    </h1>
-                                </div>
-                                <div class="col-6">
-                                    Hello
-                                </div>
-                            </div>
-                        </div>
+                    <div class="content is-small">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Phasellus nec iaculis mauris. <a>@bulmaio</a>.
                     </div>
-                    <div class="carousel-item">
-                        <img src="static/Carousel 3.png" class="d-block w-100" alt="image3">
-                        <div class="carousel-caption d-md-block ml-auto mr-auto">
-                            <div class="row text-left txt-blk">
-                                <div class="col-6">
-                                    <h1>
-                                        What can we do for you?
-                                    </h1>
-                                </div>
-                                <div class="col-6">
-                                    Hello
-                                </div>
-                            </div>
-                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-full-mobile is-one-third-tablet is-one-quarter-desktop">
+                <div class="card" style="height: 100%">
+                    <div class="card-image has-text-centered v-centered" style="height: 200px">
+                      <img src="mobile_design_graphic.png" class="is-square" alt="Webdesign image" style="height: 100%">
                     </div>
-                    <div class="carousel-item">
-                        <img src="static/Carousel 2.png" class="d-block w-100" alt="image4">
-                        <div class="carousel-caption d-md-block ml-auto mr-auto">
-                            <div class="row text-left txt-blk">
-                                <div class="col-6">
-                                    <h1>
-                                        our Portfolio 
-                                    </h1>
-                                </div>
-                                <div class="col-6">
-                                    Hello
-                                </div>
-                            </div>
-                        </div>
+                    <div class="card-content">
+                      <div class="title is-size-5 has-text-centered">
+                        MOBILE APP DEVELOPMENT
+                      </div>
+                      <div class="content is-small">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                      </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev " href="#carouselControl" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon car-icon" aria-hidden="false"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next " href="#carouselControl" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon car-icon" aria-hidden="false"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+              </div>
+              <div class="column is-full-mobile is-one-third-tablet is-one-quarter-desktop">
+                <div class="card" style="height: 100%">
+                    <div class="card-image has-text-centered v-centered" style="height: 200px">
+                      <img src="iot_viz.png" class="is-square" alt="Webdesign image" style="height: 100%">
+                    </div>
+                    <div class="card-content">
+                      <div class="title is-size-5 has-text-centered">
+                        INTERNET OF THINGS
+                      </div>
+                      <div class="content is-small">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="column is-full-mobile is-one-third-tablet is-one-quarter-desktop">
+                  <div class="card" style="height: 100%">
+                      <div class="card-image has-text-centered v-centered" style="height: 200px">
+                        <img src="SEO-Design.png" class="is-square" alt="Webdesign image">
+                      </div>
+                      <div class="card-content">
+                        <div class="title is-size-5 has-text-centered">
+                          SEARCH ENGINE OPTIMIZATION
+                        </div>
+                        <div class="content is-small">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                        </div>
+                      </div>
+                  </div>
+                </div>
             </div>
+          </div>
         </div>
+      </section>  
+      <footer class="is-dark-bg has-text-light">
+        <div class="container has-text-centered v-centered" style="padding: 1em">
+          <div class="content">
+            Made with <span style="color: #f00">&hearts;</span> by people at Jugadu.in
+          </div>  
+          
+        </div>
+      </section>
 
-        <script src="js/bootstrap/jquery.min.js"></script>
-        <script src="js/bootstrap/bootstrap.min.js"></script>
-    </body>
+    <script>
+        // NAVBAR TOGGLER
+        let burger = document.getElementById("toggle")
+        let nav = document.getElementById("navbarMenuHeroB");
+        burger.addEventListener ("click", () => {
+            nav.classList.toggle("is-active")
+            burger.classList.toggle("is-active");
+        });
+        let buildOptions = ["Websites", "Mobile Apps", "Softwares", "SEO", "IOT Applications"]
+        let whatCanWeBuildForYou = document.getElementById("whatCanWeBuildForYou")
 
+        // GET STARTED BUTTON
+        document.getElementById('getStartedBtn').onclick = function() {
+          window.location.href = "#services"
+        }
+
+        // DYNAMIC TYPE WRITER EFFECT
+        var itemNumber = 0;
+        var itemLength = 0;
+        var speed = 100; /* The speed/duration of the effect in milliseconds */
+        var revSpeed = 80;
+        var typeflag = 0;
+        function typeWriter() {
+          if (itemLength < buildOptions[itemNumber].length && typeflag == 0) {
+            whatCanWeBuildForYou.innerHTML += buildOptions[itemNumber].charAt(itemLength);
+            itemLength++;
+            setTimeout(typeWriter, speed);
+          } else if (buildOptions[itemNumber].length == itemLength && typeflag == 0) {
+            typeflag = 1;
+            setTimeout(typeWriter, 500);
+          } else if (typeflag == 1 && itemLength > 0) {
+            whatCanWeBuildForYou.innerHTML = whatCanWeBuildForYou.innerHTML.substring(0,  itemLength - 1)
+            itemLength -= 1;
+            setTimeout(typeWriter, revSpeed);
+          } else if (typeflag == 1 && itemLength <= 0) {
+            typeflag = 0;
+            itemNumber = ( itemNumber +1 ) % 5
+            itemLength = 0
+            setTimeout(typeWriter, 50);
+          }
+        }
+        typeWriter()
+    </script>
+  </body>
 </html>

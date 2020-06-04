@@ -67,6 +67,12 @@
           color: white !important;
         }
 
+        .servicesList {
+          color: #FF9D00;
+          font-size: 120%;
+          text-decoration: overline;
+        }
+
         .div.card-image {
           height: 200px;
           overflow: hidden !important;
@@ -89,7 +95,7 @@
               <img src="jugadu Logo_Circle.png" class="is-1by1" style="width: 150px" />
             
               <h2 class="subtitle is-size-4 header-subtitle">
-                Services that we provide includes <span id="whatCanWeBuildForYou"></span>
+                We deliver solutions and services for <span class="servicesList" id="whatCanWeBuildForYou"></span>
               </h2>
               <button class="button is-rounded is-warning  is-outlined" style="margin-top: 2em" id="getStartedBtn">Let's Get Started</button>
           </div>
@@ -362,7 +368,7 @@
             nav.classList.toggle("is-active")
             burger.classList.toggle("is-active");
         });
-        let buildOptions = ["Websites", "Mobile Apps", "Softwares", "SEO", "IOT Applications"]
+        let buildOptions = ["Websites", "Mobile Apps", "Softwares", "SEO & SMO", "IOT Applications", "Branding", "Much more..."]
         let whatCanWeBuildForYou = document.getElementById("whatCanWeBuildForYou")
 
         // GET STARTED BUTTON
@@ -390,7 +396,7 @@
             setTimeout(typeWriter, revSpeed);
           } else if (typeflag == 1 && itemLength <= 0) {
             typeflag = 0;
-            itemNumber = ( itemNumber +1 ) % 5
+            itemNumber = ( itemNumber +1 ) % 7
             itemLength = 0
             setTimeout(typeWriter, 50);
           }

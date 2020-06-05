@@ -82,6 +82,10 @@
           height: 100%; 
         }
 
+        .hidden-elem {
+          display: none;
+        }
+
     </style>    
   </head>
   <body>
@@ -221,9 +225,9 @@
         <div class="container">
           <h1 class="title">About Us</h1>
           <h2 class="subtitle">
-            At Jugadu.in we are dedicated to provide you with stunning and functional solutions for your websites, apps and for most of your other technological needs. We are passionate about helping people find what they need and helping the businesses that provide these services succeed.
+            At Jugadu.in we are dedicated to provide you with stunning and functional solutions for your websites, apps and most of your other technological needs. We are passionate about helping people find what they need and helping the businesses that provide these services succeed.
             <br><br>
-            We are not claiming to "know it all" but, thanks to our extremely talented team of young, passionate and creative people, we do know how to get it all done. So, don't hesitate to contact us for anything and everything. Ok, obviously not everything. We may not help you get a new private jet but can definitely help you with a website which may get you enough business for you to buy one!
+            We are not claiming to "know it all" but, thanks to our extremely talented team of young, passionate and creative people, we do know how to get it all done. So, don't hesitate to contact us for anything and everything. Ok, obviously not everything. We may not help you get a private jet but can definitely build a website that can get you enough business to buy one!
           </h2>
         </div>
       </section>
@@ -234,13 +238,23 @@
           <h2 class="subtitle">We will respond to any doubt as soon as possible.</h2>
         </div>
          <div class="container" style="padding-top: 1.5rem">
-          
+          <form method="POST">
           <div class="field">
             <label class="label">Name</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input is-success" type="text" placeholder="Name" />
+              <input class="input is-success" type="text" placeholder="Name" name="entry.100829483" required/>
               <span class="icon is-small is-left">
                 <i class="fas fa-user"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Phone Number</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input" type="tel" id="phone" name="entry.1796000239" maxlength="13" minlength="10" placeholder="Phone Number" required/>
+              <span class="icon is-small is-left">
+                +91
               </span>
             </div>
           </div>
@@ -248,7 +262,7 @@
           <div class="field">
             <label class="label">Email</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input" type="email" placeholder="Email" />
+              <input class="input" type="email" placeholder="Email" name="entry.645345925" required/>
               <span class="icon is-small is-left">
                 <i class="fas fa-envelope"></i>
               </span>
@@ -258,7 +272,7 @@
           <div class="field">
             <label class="label">Subject</label>
             <div class="control has-icons-left has-icons-right">
-              <input class="input" type="text" placeholder="Subject" />
+              <input class="input" type="text" placeholder="Subject" name="entry.1373411557" required />
               <span class="icon is-small is-left">
                 <i class="fas fa-question-circle"></i>
               </span>
@@ -268,7 +282,7 @@
           <div class="field">
             <label class="label">Message</label>
             <div class="control">
-              <textarea class="textarea" placeholder="Message"></textarea>
+              <textarea class="textarea" placeholder="Message" name="entry.854054975" required></textarea>
             </div>
           </div>
           
@@ -278,6 +292,15 @@
             </div>
           </div>
          </div> 
+        </form>
+      </div>
+        <div class="hero is-light has-text-centered hidden-elem" id="form-success-msg">
+          <div class="hero-body">
+            <h1 class="subtitle">
+              Thankyou for contacting us. We'll get back to you soon. <i class="fas fa-check-circle" style="color: #3f3"></i>
+            </h1>
+          </div> 
+        </div>
       </section>
       <footer class="is-dark-bg has-text-light">
         <div class="container has-text-centered v-centered" style="padding: 1em">
@@ -330,6 +353,30 @@
           }
         }
         typeWriter()
+        var formData
+        let formSubmitLink = "https://docs.google.com/forms/u/1/d/e/1FAIpQLSeg_DaPu2jSjUBYmta4T7gIob3F5lgWHS4Zyalq6m31ho2rPw/formResponse"
+        let contact_form = document.querySelector("form")
+        let form_success = document.getElementById("form-success-msg")
+        contact_form.addEventListener('submit', (event) => {
+          event.preventDefault()
+          formData = new FormData(contact_form) 
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            contact_form.classList.add('hidden-elem')
+            form_success.classList.remove('hidden-elem')
+            if (this.readyState == 4 && this.status == 200) {
+              contact_form.classList.add('hidden-elem')
+              form_success.classList.remove('hidden-elem')
+            }
+          };
+          xhttp.open("POST", formSubmitLink, true);
+          xhttp.send(formData);
+        })
+
+        // Contact form submit AJAX
+          
+          
+        
     </script>
   </body>
 </html>

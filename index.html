@@ -8,88 +8,11 @@
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="style.css" />
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-        
-        html {
-          scroll-behavior: smooth;
-        }
-        
-        .jugadu-gradient {
-          background-color: #FFD500; /* For browsers that do not support gradients */
-          background-image: linear-gradient(120deg, #FFD500, #FFB700);
-        }
-
-        .jugadu-radial-gradient {
-          background-color: #485461;
-          background-image:  url("bg_element_3.svg"), linear-gradient(315deg, #242730 0%, #141516 74%);
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-attachment: scroll;
-          background-position: center;
-        }
-
-        .hero.is-dark.is-bold{ 
-          background-image: url("bg_element_3.svg"), linear-gradient(141deg,#1f191a 0,#363636 71%,#46403f 100%);
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-attachment: fixed;
-          background-position: unset;
-         
-        }
-
-        .is-dark-bg {
-          background-color: #1f191a;
-          background-image: linear-gradient(141deg,#1f191a 0,#363636 71%,#46403f 100%);
-        }
-
-        .jugadu-background-elem {
-          background-image:  url("bg_element_3.svg") !important;
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-attachment: fixed;
-          background-position: center;
-        }
-
-        .navbar-title-font {
-            font-family: 'Fredoka One', cursive;
-        }
-
-        .header-title {
-          font-family: 'Poiret One', cursive;
-          color: white !important;
-        }
-
-        .header-subtitle {
-          color: white !important;
-        }
-
-        .servicesList {
-          color: #FF9D00;
-          font-size: 120%;
-          text-decoration: overline;
-        }
-
-        .div.card-image {
-          height: 200px;
-          overflow: hidden !important;
-          text-align: center;
-        }
-        .card-image > img {
-          height: 100%; 
-        }
-
-        .hidden-elem {
-          display: none;
-        }
-
-    </style>    
   </head>
   <body>
-    <section class="hero is-fullheight is-dark is-bold" id="home">
+    <section class="hero is-fullheight is-dark is-bold jugadu-landing" id="home">
         <div class="hero-body jugadu-parallax">
           <div class="container has-text-centered">
             <div class="title is-size-2 header-title">
@@ -131,14 +54,14 @@
       </nav>
       <section class="section" id="services">
         <div class="container">
-          <h1 class="title">SERVICES</h1>
+          <h1 class="title line-heading">SERVICES</h1>
           <h2 class="subtitle">
-            We offer a wide variety of <strong>low cost and efficient</strong> digital solutions. Our top priority is customer satisfaction.
+            We offer a wide variety of <strong>low cost and efficient</strong> digital solutions. Our top priority is customer satisfaction. We are trying to provide out customers with a wide range of tools and services to skyrocket their businesses.
+            Ranging from Website Development to making sure you reach that top google search using our dedicated SEO team. To targeting the ever rising mobile application market, and deploying secure cloud solutions. We aim to provide it all.
+            For any queries or price confirmations reach out to us thorugh our <a class="internal-links" href="#contact"><strong><span style="text-decoration: underline;">Contact</span></strong></a> section.
           </h2>
         </div>
-      </section>
-      <section class="section">
-        <div class="container">
+        <div class="container" style="padding-top: 2em">
           <div class="content">
             <div class="columns is-multiline is-mobile is-centered">
               <div class="column is-full-mobile is-one-third-tablet is-one-quarter-desktop">
@@ -216,25 +139,38 @@
                       </div>
                   </div>
                 </div>
+                <div class="column is-full-mobile is-one-third-tablet is-one-quarter-desktop">
+                  <div class="hero is-info" style="height: 100%">
+                    <div class="hero-body v-centered">
+                      <div class="container">
+                        <h1 class="title">
+                          MORE SERVICES COMING SOON...
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
       </section>    
 
-      <section class="section" id="about">
-        <div class="container">
-          <h1 class="title">About Us</h1>
+      <section class="hero is-dark is-bold" id="about">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title jugadu-orange-color line-heading" style="padding-bottom: 5px">About Us</h1>
           <h2 class="subtitle">
             At Jugadu.in we are dedicated to provide you with stunning and functional solutions for your websites, apps and most of your other technological needs. We are passionate about helping people find what they need and helping the businesses that provide these services succeed.
             <br><br>
             We are not claiming to "know it all" but, thanks to our extremely talented team of young, passionate and creative people, we do know how to get it all done. So, don't hesitate to contact us for anything and everything. Ok, obviously not everything. We may not help you get a private jet but can definitely build a website that can get you enough business to buy one!
           </h2>
+          </div>
         </div>
       </section>
 
       <section class="section" id="contact">
         <div class="container">
-          <h1 class="title">Contact Us</h1>
+          <h1 class="title line-heading">Contact Us</h1>
           <h2 class="subtitle">We will respond to any doubt as soon as possible.</h2>
         </div>
          <div class="container" style="padding-top: 1.5rem">
@@ -311,72 +247,7 @@
         </div>
       </section>
 
-    <script>
-        // NAVBAR TOGGLER
-        let burger = document.getElementById("toggle")
-        let nav = document.getElementById("navbarMenuHeroB");
-        burger.addEventListener ("click", () => {
-            nav.classList.toggle("is-active")
-            burger.classList.toggle("is-active");
-        });
-        let buildOptions = ["Websites", "Mobile Apps", "Softwares", "SEO & SMO", "IOT Applications", "Branding", "Much more..."]
-        let whatCanWeBuildForYou = document.getElementById("whatCanWeBuildForYou")
-
-        // GET STARTED BUTTON
-        document.getElementById('getStartedBtn').onclick = function() {
-          window.location.href = "#services"
-        }
-
-        // DYNAMIC TYPE WRITER EFFECT
-        var itemNumber = 0;
-        var itemLength = 0;
-        var speed = 100; /* The speed/duration of the effect in milliseconds */
-        var revSpeed = 80;
-        var typeflag = 0;
-        function typeWriter() {
-          if (itemLength < buildOptions[itemNumber].length && typeflag == 0) {
-            whatCanWeBuildForYou.innerHTML += buildOptions[itemNumber].charAt(itemLength);
-            itemLength++;
-            setTimeout(typeWriter, speed);
-          } else if (buildOptions[itemNumber].length == itemLength && typeflag == 0) {
-            typeflag = 1;
-            setTimeout(typeWriter, 500);
-          } else if (typeflag == 1 && itemLength > 0) {
-            whatCanWeBuildForYou.innerHTML = whatCanWeBuildForYou.innerHTML.substring(0,  itemLength - 1)
-            itemLength -= 1;
-            setTimeout(typeWriter, revSpeed);
-          } else if (typeflag == 1 && itemLength <= 0) {
-            typeflag = 0;
-            itemNumber = ( itemNumber +1 ) % 7
-            itemLength = 0
-            setTimeout(typeWriter, 50);
-          }
-        }
-        typeWriter()
-        var formData
-        let formSubmitLink = "https://docs.google.com/forms/u/1/d/e/1FAIpQLSeg_DaPu2jSjUBYmta4T7gIob3F5lgWHS4Zyalq6m31ho2rPw/formResponse"
-        let contact_form = document.querySelector("form")
-        let form_success = document.getElementById("form-success-msg")
-        contact_form.addEventListener('submit', (event) => {
-          event.preventDefault()
-          formData = new FormData(contact_form) 
-          var xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-            contact_form.classList.add('hidden-elem')
-            form_success.classList.remove('hidden-elem')
-            if (this.readyState == 4 && this.status == 200) {
-              contact_form.classList.add('hidden-elem')
-              form_success.classList.remove('hidden-elem')
-            }
-          };
-          xhttp.open("POST", formSubmitLink, true);
-          xhttp.send(formData);
-        })
-
-        // Contact form submit AJAX
-          
-          
-        
-    </script>
+    <script src="jugadu.js"></script>
+    <script src="jugadu_typewriter.js"></script>
   </body>
 </html>

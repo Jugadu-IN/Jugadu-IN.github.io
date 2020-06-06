@@ -128,3 +128,7 @@ html {
     content: '';
     border-top: 2px solid;
 }
+
+.show-on-scroll {
+    display: none;
+}

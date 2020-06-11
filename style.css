@@ -12,7 +12,7 @@ html {
 
 .jugadu-radial-gradient {
   background-color: #485461;
-  background-image:  url("bg_element_3.svg"), linear-gradient(315deg, #242730 0%, #141516 74%);
+  background-image:  url("Web Home.svg"), linear-gradient(315deg, #242730 0%, #141516 74%);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -20,7 +20,7 @@ html {
 }
 
 .hero.is-dark.is-bold.jugadu-landing{ 
-  background-image: url("bg_element_3.svg"), linear-gradient(141deg,#1f191a 0,#363636 71%,#46403f 100%);
+  background-image: url("Web Home.svg"), linear-gradient(141deg,#1f191a 0,#363636 71%,#46403f 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -34,7 +34,7 @@ html {
 }
 
 .jugadu-background-elem {
-  background-image:  url("bg_element_3.svg") !important;
+  background-image:  url("Web Home.svg") !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

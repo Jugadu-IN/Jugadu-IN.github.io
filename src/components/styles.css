@@ -1,0 +1,50 @@
+.text{
+    font-size:medium;
+}
+.width{
+    margin-right:65px;
+}
+.Heading{
+    font-size: 65px;
+    font-weight: 700;
+    color: #2b4b80;
+    padding-top: 15%;
+    font-weight: 750;
+    line-height: 1.2;
+    font-family: "Poppins", sans-serif;
+}
+.content{
+    padding-top: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #707b8e;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: normal;
+}
+.we-create-cap{
+    color: #2b4b80;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 29px;
+    padding-right: 25px;
+}
+.boxy:hover{
+    opacity:0.5;
+    transition-duration:0.5s;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding:29px 50px 10px 50px;
+    border-radius: 10px;
+    background-color: white;
+  }
+.inmind{
+      background-image: linear-gradient(to right, #ff5c98 0%, #7b40c0 100%);
+      border-radius: "50px";
+}
+.business{
+    border-radius: "32px";
+}

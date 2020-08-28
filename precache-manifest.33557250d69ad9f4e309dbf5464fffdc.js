@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "99b41a45f0b508e692af6014dacba17d",
+    "revision": "82d5129519eec505490292034fa08de1",
     "url": "/Jugadu-IN.github.io/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Jugadu-IN.github.io/static/css/2.ceb79488.chunk.css"
   },
   {
-    "revision": "7351aeee28cdebaee61d",
-    "url": "/Jugadu-IN.github.io/static/css/main.5b6ffdae.chunk.css"
+    "revision": "a2a2d715396ac5804f4d",
+    "url": "/Jugadu-IN.github.io/static/css/main.7762103e.chunk.css"
   },
   {
     "revision": "bea247e130ee9a9d497e",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Jugadu-IN.github.io/static/js/2.a095b175.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7351aeee28cdebaee61d",
-    "url": "/Jugadu-IN.github.io/static/js/main.c992c3e1.chunk.js"
+    "revision": "a2a2d715396ac5804f4d",
+    "url": "/Jugadu-IN.github.io/static/js/main.cc6186a8.chunk.js"
   },
   {
     "revision": "746d43a511c41d61a25f",

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Jugadu-IN.github.io/static/css/main.06c362fe.chunk.css",
-    "main.js": "/Jugadu-IN.github.io/static/js/main.e180b246.chunk.js",
-    "main.js.map": "/Jugadu-IN.github.io/static/js/main.e180b246.chunk.js.map",
+    "main.js": "/Jugadu-IN.github.io/static/js/main.2f30cb0e.chunk.js",
+    "main.js.map": "/Jugadu-IN.github.io/static/js/main.2f30cb0e.chunk.js.map",
     "runtime-main.js": "/Jugadu-IN.github.io/static/js/runtime-main.82512f14.js",
     "runtime-main.js.map": "/Jugadu-IN.github.io/static/js/runtime-main.82512f14.js.map",
     "static/css/2.ceb79488.chunk.css": "/Jugadu-IN.github.io/static/css/2.ceb79488.chunk.css",
     "static/js/2.36aa62d0.chunk.js": "/Jugadu-IN.github.io/static/js/2.36aa62d0.chunk.js",
     "static/js/2.36aa62d0.chunk.js.map": "/Jugadu-IN.github.io/static/js/2.36aa62d0.chunk.js.map",
     "index.html": "/Jugadu-IN.github.io/index.html",
-    "precache-manifest.5dd603038f8d930f414ecc9aeeac1164.js": "/Jugadu-IN.github.io/precache-manifest.5dd603038f8d930f414ecc9aeeac1164.js",
+    "precache-manifest.ab9240dde9dfe861c61cc0f7fa8d58d0.js": "/Jugadu-IN.github.io/precache-manifest.ab9240dde9dfe861c61cc0f7fa8d58d0.js",
     "service-worker.js": "/Jugadu-IN.github.io/service-worker.js",
     "static/css/2.ceb79488.chunk.css.map": "/Jugadu-IN.github.io/static/css/2.ceb79488.chunk.css.map",
     "static/css/main.06c362fe.chunk.css.map": "/Jugadu-IN.github.io/static/css/main.06c362fe.chunk.css.map",
@@ -49,6 +49,6 @@
     "static/css/2.ceb79488.chunk.css",
     "static/js/2.36aa62d0.chunk.js",
     "static/css/main.06c362fe.chunk.css",
-    "static/js/main.e180b246.chunk.js"
+    "static/js/main.2f30cb0e.chunk.js"
   ]
 }

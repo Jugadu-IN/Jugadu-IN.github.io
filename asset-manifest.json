@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Jugadu-IN.github.io/static/css/main.06c362fe.chunk.css",
-    "main.js": "/Jugadu-IN.github.io/static/js/main.2f30cb0e.chunk.js",
-    "main.js.map": "/Jugadu-IN.github.io/static/js/main.2f30cb0e.chunk.js.map",
+    "main.js": "/Jugadu-IN.github.io/static/js/main.341374bd.chunk.js",
+    "main.js.map": "/Jugadu-IN.github.io/static/js/main.341374bd.chunk.js.map",
     "runtime-main.js": "/Jugadu-IN.github.io/static/js/runtime-main.82512f14.js",
     "runtime-main.js.map": "/Jugadu-IN.github.io/static/js/runtime-main.82512f14.js.map",
     "static/css/2.ceb79488.chunk.css": "/Jugadu-IN.github.io/static/css/2.ceb79488.chunk.css",
-    "static/js/2.36aa62d0.chunk.js": "/Jugadu-IN.github.io/static/js/2.36aa62d0.chunk.js",
-    "static/js/2.36aa62d0.chunk.js.map": "/Jugadu-IN.github.io/static/js/2.36aa62d0.chunk.js.map",
+    "static/js/2.5aabf228.chunk.js": "/Jugadu-IN.github.io/static/js/2.5aabf228.chunk.js",
+    "static/js/2.5aabf228.chunk.js.map": "/Jugadu-IN.github.io/static/js/2.5aabf228.chunk.js.map",
     "index.html": "/Jugadu-IN.github.io/index.html",
-    "precache-manifest.ab9240dde9dfe861c61cc0f7fa8d58d0.js": "/Jugadu-IN.github.io/precache-manifest.ab9240dde9dfe861c61cc0f7fa8d58d0.js",
+    "precache-manifest.72f42f2b88aec51f7550475800745e26.js": "/Jugadu-IN.github.io/precache-manifest.72f42f2b88aec51f7550475800745e26.js",
     "service-worker.js": "/Jugadu-IN.github.io/service-worker.js",
     "static/css/2.ceb79488.chunk.css.map": "/Jugadu-IN.github.io/static/css/2.ceb79488.chunk.css.map",
     "static/css/main.06c362fe.chunk.css.map": "/Jugadu-IN.github.io/static/css/main.06c362fe.chunk.css.map",
-    "static/js/2.36aa62d0.chunk.js.LICENSE.txt": "/Jugadu-IN.github.io/static/js/2.36aa62d0.chunk.js.LICENSE.txt",
+    "static/js/2.5aabf228.chunk.js.LICENSE.txt": "/Jugadu-IN.github.io/static/js/2.5aabf228.chunk.js.LICENSE.txt",
     "static/media/BG_right.png": "/Jugadu-IN.github.io/static/media/BG_right.d3d8c1ef.png",
     "static/media/Services.png": "/Jugadu-IN.github.io/static/media/Services.fd502fe8.png",
     "static/media/aditya_rastogi.jpg": "/Jugadu-IN.github.io/static/media/aditya_rastogi.2e3d1030.jpg",
@@ -47,8 +47,8 @@
   "entrypoints": [
     "static/js/runtime-main.82512f14.js",
     "static/css/2.ceb79488.chunk.css",
-    "static/js/2.36aa62d0.chunk.js",
+    "static/js/2.5aabf228.chunk.js",
     "static/css/main.06c362fe.chunk.css",
-    "static/js/main.2f30cb0e.chunk.js"
+    "static/js/main.341374bd.chunk.js"
   ]
 }
